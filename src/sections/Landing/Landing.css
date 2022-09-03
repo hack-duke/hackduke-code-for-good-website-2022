@@ -1,0 +1,126 @@
+@import url('http://fonts.cdnfonts.com/css/rany');
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(at bottom right, rgba(235, 198, 68, 0.2625) 0%, rgba(251, 239, 231, 0) 82.29%);
+}
+
+@media screen and (max-width: 1000px){
+    .landing {
+        flex-direction: column;
+        align-items: center;
+        height: 900px;
+    }
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.descriptor {
+    font-family: "Rany", sans-serif;
+    margin-top: 20px;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #26467E;
+}
+
+.line {
+    margin-top: 20px;
+    background: #EBC644;
+    border: 2px solid #EBC644;
+    height: 0px;
+}
+
+.date {
+    font-family: "Rany", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #26467E;
+    margin-top: 20px;
+}
+
+.join {
+    width: 249px;
+    height: 64px;
+    background: #F6E4A1;
+    border-radius: 30px;
+    font-family: "Rany", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 22px;
+    color: #26467E;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px){
+    .join {
+        display: none;
+    }
+
+    .join-mobile {
+        display: block;
+        margin-top: -85px;
+    }
+}
+
+@media screen and (min-width: 1001px){
+    .join {
+        display: block;
+    }
+
+    .join-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .right {
+        overflow: hidden;
+        position: relative;
+        height: 450px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
+.island {
+    margin-left: 125px;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1200px){
+    .island {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .island {
+        margin-left: 0px;
+        margin-top: -180px;
+        height: 650px;
+    }
+}
