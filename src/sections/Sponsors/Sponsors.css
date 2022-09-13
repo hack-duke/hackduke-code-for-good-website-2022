@@ -1,12 +1,20 @@
 #sponsors {
+    height: 100vh;
     width: 100vw;
     background: linear-gradient(180deg,rgb(246, 228, 161, 0.2) 33%, rgb(217, 224, 132, 0.3) 66%, rgb(170, 219, 183, 0.4) 99%);
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }
 
 .sponsors-container {
-    max-width: 1200px;
-    margin: 0px auto;
+    width: 80%;
+    max-width: 1400px;
+    margin-top: 50px;
+    /* margin: 0px auto; */
     display: flex;
     justify-content: center;
 }
@@ -14,9 +22,17 @@
 .sponsors-container img {
     margin-bottom: 50px;
     padding: 0px;
-}
-
-#footer_flowers {
     width: 100%;
 }
 
+#footer_flowers {
+    /* margin-top: 200px; */
+    width: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+    #footer_flower {
+        /* width: 100%; */
+        margin-top: 0px;
+    }
+}
