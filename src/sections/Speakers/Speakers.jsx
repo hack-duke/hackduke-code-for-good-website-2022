@@ -1,6 +1,5 @@
 import React from 'react';
 import './Speakers.css';
-import butterfly4 from "../../assets/About/butterfly-4.svg";
 
 const Speakers = () => {
 	return(
