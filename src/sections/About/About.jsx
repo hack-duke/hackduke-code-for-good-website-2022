@@ -1,6 +1,9 @@
 import React from 'react';
 import './About.css';
 
+
+//TODO: Add line1 and line2 SVG over entire page, see figma.
+
 import line1 from "../../assets/About/vector-1.svg";
 import line2 from "../../assets/About/vector-2.svg";
 import butterfly4 from "../../assets/About/butterfly-4.svg";
