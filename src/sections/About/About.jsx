@@ -12,7 +12,7 @@ import butterfly6 from "../../assets/About/butterfly-6.svg";
 
 const About = () => {
 	return(
-	<div className="about">
+	<div id="about" className="about">
 		<div className="about-grid-container">
 			<div className="about-text">
 				<h3>

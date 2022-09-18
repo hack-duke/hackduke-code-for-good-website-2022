@@ -28,6 +28,7 @@ const Landing = () => {
                 className="conduct-link"
                 href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
                 target="_blank"
+                rel="noreferrer"
               >
                 Code of Conduct
               </a>
@@ -52,6 +53,7 @@ const Landing = () => {
               className="conduct-link"
               href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
               target="_blank"
+              rel="noreferrer"
             >
               Code of Conduct
             </a>

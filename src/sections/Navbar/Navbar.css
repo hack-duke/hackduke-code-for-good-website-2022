@@ -1,4 +1,5 @@
 .navbar {
+    /* position: relative; */
     position: absolute;
     top: 0;
     left: 0;
@@ -166,6 +167,10 @@
     #navbar {
         width: 10%;
         z-index: 99999;
+    }
+
+    .navbar-fixed {
+        background-color: transparent;
     }
 
     #content-left #navbar-title {

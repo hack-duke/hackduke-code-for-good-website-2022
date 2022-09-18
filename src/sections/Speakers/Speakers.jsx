@@ -3,7 +3,7 @@ import './Speakers.css';
 
 const Speakers = () => {
 	return(
-        <div className="speakers">
+        <div id="speakers" className="speakers">
             <h2>Speakers</h2>
             <p id='speakers-blurb'>HackDuke brings in industry leaders, startup founders, and other impressive humans for talks and workshops. Learn, grow, and get inspired.</p>
             <div className="speaker-info-container">
