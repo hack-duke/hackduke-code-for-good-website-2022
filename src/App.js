@@ -1,4 +1,5 @@
 import React from "react";
+import VisibilitySensor from "react-visibility-sensor";
 import "./App.css";
 
 import Navbar from "./sections/Navbar/Navbar";
@@ -11,11 +12,23 @@ import FAQ from "./sections/FAQ/FAQ";
 import Sponsors from "./sections/Sponsors/Sponsors";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { aboutIsVisible: false };
+  }
+
   render() {
     return (
       <div>
-        {/* <Navbar /> */}
-        <Landing />
+        <Navbar isVisible={this.state.aboutIsVisible} />
+        <VisibilitySensor
+          partialVisibility
+          onChange={(isVisible) => {
+            this.setState({ aboutIsVisible: isVisible });
+          }}
+        >
+          <Landing />
+        </VisibilitySensor>
         <About />
         <Tracks />
         <Speakers />

@@ -6,7 +6,7 @@ import island from "../../assets/Landing/home graphic.svg";
 
 const Landing = () => {
   return (
-    <div className="landing">
+    <div id="landing" className="landing">
       <div className="left">
         <div className="welcome">
           <img className="hackduke-logo" src={logo} />

@@ -1,3 +1,17 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'Rany';
+    src: local('Rany'), url(./fonts/Rany.otf) format('opentype');
+}
+
+body{
+    font-family: "Rany", sans-serif;
+}
+
 html, body {
     position: relative;
     background: var(--black);
