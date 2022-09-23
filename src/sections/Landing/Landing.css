@@ -1,23 +1,17 @@
 .landing {
-    width: 100vw;
+    padding-top: 12vh;
     height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background: radial-gradient(at bottom right, rgba(235, 198, 68, 0.2625) 0%, rgba(251, 239, 231, 0) 82.29%);
+    background: radial-gradient(
+        at bottom right,
+        rgba(235, 198, 68, 0.2625) 0%,
+        rgba(251, 239, 231, 0) 82.29%
+    );
 }
 
-@media screen and (max-width: 1000px){
-    .landing {
-        flex-direction: column;
-        align-items: center;
-        height: 950px;
-    }
-}
-
-.left {
-    display: flex;
-    align-items: center;
+.welcome {
+    width: 25rem;
+    margin-left: 18vw;
+    text-align: left;
 }
 
 .descriptor {
@@ -28,13 +22,13 @@
     line-height: 44px;
     letter-spacing: 0em;
     text-align: left;
-    color: #26467E;
+    color: #26467e;
 }
 
 .line {
     margin-top: 20px;
-    background: #EBC644;
-    border: 2px solid #EBC644;
+    background: #ebc644;
+    border: 2px solid #ebc644;
     height: 0px;
 }
 
@@ -45,13 +39,48 @@
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
-    color: #26467E;
+    color: #26467e;
     margin-top: 20px;
 }
 
-.button-conduct {
-    display: flex;
-    flex-direction: column;
+.join {
+    width: 15rem;
+    height: 4rem;
+    text-align: center;
+    padding-top: 1.25rem;
+    margin-top: 1rem;
+    background: #f6e4a1;
+    border-radius: 30px;
+    font-family: "Rany", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 22px;
+    color: #26467e;
+    transition: 0.4s background-color;
+    z-index: 10;
+}
+
+.join:hover {
+    cursor: pointer;
+    background: #ebc644;
+    transition: 0.4s background-color;
+}
+
+@keyframes island_desktop {
+    0% {
+        transform: translateY(-0.5rem);
+    }
+    100% {
+        transform: translateY(0.5rem);
+    }
+}
+
+.island {
+    height: 100vh;
+    position: relative;
+    padding-top: 15vh;
+    animation: island_desktop 5s infinite ease-in-out alternate;
 }
 
 .conduct {
@@ -61,89 +90,158 @@
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
-    color: #26467E;
+    color: #26467e;
     margin-top: 12px;
 }
 
-.conduct-link {
-    color: #26467E;
-    text-decoration: none;
+.island > * {
+    position: absolute;
+    z-index: 0;
 }
 
-.join {
-    width: 249px;
-    height: 64px;
-    background: #F6E4A1;
-    border-radius: 30px;
-    font-family: "Rany", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 22px;
-    color: #26467E;
-    border: none;
-    margin-top: 20px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    overflow: hidden;
-    text-align: center;
-    line-height: 60px;
-    text-decoration: none;
-}
-
-.join-mobile {
-    align-self: center;
-}
-
-@media screen and (max-width: 1000px){
-    .button-conduct {
-        display: none;
+@keyframes sun_desktop {
+    0% {
+        transform: translateY(-24rem) translateX(-2rem);
     }
-
-    .button-conduct-mobile {
-        display: flex;
-        margin-top: -85px;
+    100% {
+        transform: translateY(-27rem) translateX(-2rem);
     }
 }
 
-@media screen and (min-width: 1001px){
-    .button-conduct {
-        display: flex;
-    }
+.sun {
+    z-index: -1;
+    transform: translateY(-24rem) translateX(-2rem);
+    animation: sun_desktop 3s infinite ease-in-out alternate;
+}
 
-    .button-conduct-mobile {
-        display: none;
+@keyframes purple_desktop {
+    0% {
+        transform: translateY(-24rem) translateX(21rem);
+    }
+    100% {
+        transform: translateY(-26rem) translateX(21rem);
     }
 }
 
-@media screen and (max-width: 1000px){
+.purple {
+    transform: translateY(-24rem) translateX(21rem);
+    animation: purple_desktop 2s 1s infinite ease-in-out alternate;
+}
+
+@keyframes pink_desktop {
+    0% {
+        transform: translateY(-23rem) translateX(15rem);
+    }
+    100% {
+        transform: translateY(-26rem) translateX(15rem);
+    }
+}
+
+.pink {
+    transform: translateY(-23rem) translateX(15rem);
+    animation: pink_desktop 4s 2s infinite ease-in-out alternate;
+}
+
+.conduct a {
+    transition: 0.4s color;
+}
+
+.conduct a:hover {
+    transition: 0.4s color;
+}
+
+@media screen and (max-width: 1024px) {
+    .landing {
+        padding-top: 5vh;
+        height: 130vh;
+    }
+
+    .welcome {
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .descriptor {
+        text-align: center;
+    }
+
+    .date {
+        text-align: center;
+    }
+
     .right {
-        overflow: visible;
-        position: relative;
-        height: 450px;
-        width: 600px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
+        text-align: center;
     }
-}
 
-.island {
-    margin-left: 125px;
-    height: 100vh;
-}
-
-@media screen and (max-width: 1200px){
     .island {
-        margin-left: 20px;
+        margin-top: 10vh;
     }
-}
 
-@media screen and (max-width: 1000px){
-    .island {
-        margin-left: 0px;
-        margin-top: -180px;
-        height: 650px;
+    .bg {
+        width: 80vw;
+        left: 10vw;
+    }
+
+    @keyframes sun_mobile {
+        0% {
+            transform: translateY(-50vw) translateX(-40vw);
+        }
+        100% {
+            transform: translateY(-57vw) translateX(-40vw);
+        }
+    }
+
+    .sun {
+        width: 40vw;
+        transform: translateY(-50vw) translateX(-40vw);
+        animation: sun_mobile 3s infinite ease-in-out alternate;
+        z-index: -1;
+    }
+
+    @keyframes purple_mobile {
+        0% {
+            transform: translateY(-62vw) translateX(10vw);
+        }
+        100% {
+            transform: translateY(-70vw) translateX(10vw);
+        }
+    }
+
+    .purple {
+        width: 30vw;
+        transform: translateY(-62vw) translateX(10vw);
+        animation: purple_mobile 2.5s 1s infinite ease-in-out alternate;
+    }
+
+    @keyframes pink_mobile {
+        0% {
+            transform: translateY(-48vw);
+        }
+        100% {
+            transform: translateY(-52vw);
+        }
+    }
+
+    .pink {
+        width: 20vw;
+        transform: translateY(-48vw);
+        animation: pink_mobile 3s 2.3s infinite ease-in-out alternate;
+    }
+
+    .join {
+        position: absolute;
+        width: 50vw;
+        left: 25vw;
+        /* transform: translateY(1vw) translateX(1); */
+    }
+
+    .conduct {
+        position: absolute;
+        width: 80vw;
+        text-align: center;
+        left: 10vw;
+        transform: translateY(10vh);
+        z-index: 10;
     }
 }
