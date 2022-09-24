@@ -34,8 +34,7 @@ const Sponsors = () => {
     );
   };
   return (
-    <div id="sponsors">
-      <div className="sponsors-container">
+      <div id = "Sponsors" className="sponsors-container">
         <h2>Sponsors</h2>
         <div className={"sponsors-row"}>
           {getSponsorContent(lineage)}
@@ -54,7 +53,6 @@ const Sponsors = () => {
         </div>
         <img id={"footer_flowers"} src={flowers} alt={"Flowers"}></img>
       </div>
-    </div>
   );
 };
 
