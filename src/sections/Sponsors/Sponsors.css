@@ -1,12 +1,11 @@
+@import url("http://fonts.cdnfonts.com/css/rany");
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
 .sponsors-logos {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
-}
-.sponsors-header {
-  font-weight: bold;
-  font-size: 45px;
 }
 .apply-link {
   margin-top: 16%;
@@ -74,20 +73,27 @@
 }
 
 .sponsors-container {
-  width: 80%;
-  max-width: 1400px;
-  margin-top: 50px;
-  /* margin: 0px auto; */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  background: #fbf9f7;
 }
 
+.sponsors-container h2 {
+  font-family: "Rany";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+  padding-bottom: 25px;
+  color: #26467e;
+  padding-left: 150px;
+}
 .sponsors-container img {
-  margin-bottom: 50px;
+  margin-bottom: 10;
   padding: 0px;
   width: 100%;
 }
-
 #footer_flowers {
   /* margin-top: 200px; */
   width: 100%;

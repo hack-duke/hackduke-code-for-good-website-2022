@@ -34,23 +34,26 @@ const Sponsors = () => {
     );
   };
   return (
-    <div className={"width-container"}>
-      <div className={"sponsors-row"}>
-        {getSponsorContent(lineage)}
-        {getSponsorContent(microsoft)}
-        {getSponsorContent(js)}
+    <div id="sponsors">
+      <div className="sponsors-container">
+        <h2>Sponsors</h2>
+        <div className={"sponsors-row"}>
+          {getSponsorContent(lineage)}
+          {getSponsorContent(microsoft)}
+          {getSponsorContent(js)}
+        </div>
+        <div className={"sponsors-row"}>
+          {getSponsorContent(hrt)}
+          {getSponsorContent(mems)}
+          {getSponsorContent(citadel)}
+        </div>
+        <div className={"sponsors-row"}>
+          {getSponsorContent(imc)}
+          {getSponsorContent(iid)}
+          {getSponsorContent(cs)}
+        </div>
+        <img id={"footer_flowers"} src={flowers} alt={"Flowers"}></img>
       </div>
-      <div className={"sponsors-row"}>
-        {getSponsorContent(hrt)}
-        {getSponsorContent(mems)}
-        {getSponsorContent(citadel)}
-      </div>
-      <div className={"sponsors-row"}>
-        {getSponsorContent(imc)}
-        {getSponsorContent(iid)}
-        {getSponsorContent(cs)}
-      </div>
-      <img id={"footer_flowers"} src={flowers} alt={"Flowers"}></img>
     </div>
   );
 };
