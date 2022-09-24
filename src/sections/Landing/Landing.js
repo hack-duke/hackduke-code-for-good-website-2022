@@ -6,7 +6,7 @@ import island from "../../assets/Landing/home graphic.svg";
 
 const Landing = () => {
   return (
-    <div className="landing">
+    <div id="landing" className="landing">
       <div className="left">
         <div className="welcome">
           <img className="hackduke-logo" src={logo} />
@@ -28,6 +28,7 @@ const Landing = () => {
                 className="conduct-link"
                 href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
                 target="_blank"
+                rel="noreferrer"
               >
                 Code of Conduct
               </a>
@@ -52,6 +53,7 @@ const Landing = () => {
               className="conduct-link"
               href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
               target="_blank"
+              rel="noreferrer"
             >
               Code of Conduct
             </a>

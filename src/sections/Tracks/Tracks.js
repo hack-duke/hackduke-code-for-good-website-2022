@@ -2,7 +2,7 @@ import React from "react";
 import "./Tracks.css";
 
 const Tracks = () => {
-  return <div className="tracks"></div>;
+  return <div id="tracks" className="tracks"></div>;
 };
 
 export default Tracks;

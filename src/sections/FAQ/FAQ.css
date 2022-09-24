@@ -1,0 +1,82 @@
+@import url("http://fonts.cdnfonts.com/css/rany");
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.FAQ {
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    max-width: 100%; /* added */
+    display: flex;
+    flex-direction: column;
+    background: #fbf9f7;
+    padding: 75px 150px;
+}
+
+.FAQ h2 {
+    font-family: "Rany";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    padding-bottom: 25px;
+    color: #26467e;
+}
+
+.FAQ content {
+    transition: all 1s;
+}
+
+.note {
+    transition: all 1s;
+    background-color: orange;
+    padding: 1rem;
+    /* box-shadow: 5px 10px; */
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(158, 156, 158, 1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(158, 156, 158, 1);
+    box-shadow: 5px 5px 5px 0px rgba(158, 156, 158, 1);
+}
+
+.note-tacks {
+    position: absolute;
+    transform: translateY(-0.5rem) translateX(-0.5rem);
+}
+
+.note-title {
+    transition: all 1s;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Rany";
+    font-weight: 700;
+    color: #26467e;
+}
+
+.note-text {
+    padding: 1rem;
+    transition: all 1s;
+    font-size: 1rem;
+    font-family: "Rany";
+    font-weight: 400;
+    color: #26467e;
+}
+
+#blue {
+    background-color: #dfecfe;
+}
+
+#green {
+    background-color: #aadbb7;
+}
+
+#yellow {
+    background-color: #f6e4a1;
+}
+
+#red {
+    background-color: #fbe6dc;
+}
+
+#purple {
+    background-color: #d2d4f8;
+}

@@ -1,7 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'Rany', sans-serif;
+    src: local('Rany'), url(./fonts/Rany-400.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
-    position: relative;
+    /* position: relative; */
     background: var(--black);
-    max-width: 100%;
+    /* max-width: 100%; not sure if this is necessary  */
+    /* max-width: 100%; */
     overflow-x: hidden;
     margin: 0;
+    /* height: 100%; */
+    width: 100%;
+    font-family: "Rany", sans-serif;
 }
