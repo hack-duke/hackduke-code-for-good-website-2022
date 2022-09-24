@@ -92,7 +92,7 @@ const Navbar = ({ isVisible }) => {
             <AnchorLink
               className="navbar-link"
               rel="noopener noreferrer"
-              href={"#sponsors"}
+              href={"#Sponsors"}
               onClick={closeCheckbox}
             >
               Sponsors
