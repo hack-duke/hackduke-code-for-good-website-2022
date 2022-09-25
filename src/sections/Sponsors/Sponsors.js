@@ -42,13 +42,13 @@ const Sponsors = () => {
           {getSponsorContent(js)}
         </div>
         <div className={"sponsors-row"}>
+          {getSponsorContent(imc)}
           {getSponsorContent(hrt)}
-          {getSponsorContent(mems)}
           {getSponsorContent(citadel)}
         </div>
         <div className={"sponsors-row"}>
-          {getSponsorContent(imc)}
           {getSponsorContent(iid)}
+          {getSponsorContent(mems)}
           {getSponsorContent(cs)}
         </div>
         <img id={"footer_flowers"} src={flowers} alt={"Flowers"}></img>
