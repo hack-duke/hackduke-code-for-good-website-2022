@@ -17,6 +17,14 @@
   flex-wrap: wrap;
   margin: 0 auto;
   height: 150px;
+  width: 60%;
+}
+.sponsors-row-big {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: 150px;
   width: 80%;
 }
 

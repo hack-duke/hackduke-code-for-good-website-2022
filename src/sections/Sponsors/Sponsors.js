@@ -18,6 +18,8 @@ const imc = { img: "imc.svg", link: "https://www.imc.com/us/" };
 const iid = { img: "iid.png", link: "https://bigdata.duke.edu/" };
 const cs = { img: "cs.png", link: "https://cs.duke.edu/" };
 const mems = { img: "mems.svg", link: "https://mems.duke.edu/" };
+const aspida = {img:"Aspida.svg",link:"https://www.aspida.com/"};
+const checkbook = {img:"checkbook.png",link:"https://checkbook.io/"};
 
 const Sponsors = () => {
   const getSponsorContent = (sponsor) => {
@@ -36,18 +38,22 @@ const Sponsors = () => {
   return (
       <div id = "Sponsors" className="sponsors-container">
         <h2>Sponsors</h2>
-        <div className={"sponsors-row"}>
+        <div className={"sponsors-row-big"}>
           {getSponsorContent(lineage)}
           {getSponsorContent(microsoft)}
-          {getSponsorContent(js)}
+          {getSponsorContent(iid)}
+        </div>
+        <div className={"sponsors-row-big"}>
+          {getSponsorContent(imc)}
+          {getSponsorContent(checkbook)}
         </div>
         <div className={"sponsors-row"}>
-          {getSponsorContent(imc)}
+          {getSponsorContent(aspida)}
           {getSponsorContent(hrt)}
           {getSponsorContent(citadel)}
         </div>
         <div className={"sponsors-row"}>
-          {getSponsorContent(iid)}
+          {getSponsorContent(js)}
           {getSponsorContent(mems)}
           {getSponsorContent(cs)}
         </div>
