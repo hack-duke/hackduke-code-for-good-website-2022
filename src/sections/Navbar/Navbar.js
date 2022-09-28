@@ -28,9 +28,9 @@ const Navbar = ({ isVisible }) => {
       <div id="contents">
         <div id="content-left">
           <div id="navbar-title" className={"navbar-title"}>
-            <AnchorLink rel="noopener noreferrer" href={"#landing"}>
+            <a href="https://hackduke.org" target="_blank" rel="noreferrer">
               HackDuke
-            </AnchorLink>
+            </a>
           </div>
           <input
             className="navbar-btn"
