@@ -9,6 +9,12 @@
     padding: 30px 150px;
 }
 
+@media screen and (max-width: 1024px){
+    .schedule {
+        padding: 30px 20px;
+    }
+  }
+
 .schedule h2{
     font-family: 'Rany';
     font-style: normal;
