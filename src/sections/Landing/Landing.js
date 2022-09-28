@@ -47,25 +47,6 @@ const Landing = () => {
                     <img className="purple" src={purple} />
                     <img className="pink" src={pink} />
                 </div>
-                {/* <div className="button-conduct-mobile button-conduct">
-                    <a
-                        className="join-mobile join"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://hackduke.typeform.com/to/XYySGCPT">
-                        Apply Now!
-                    </a>
-                    <div className="conduct">
-                        © HackDuke 2022 —{" "}
-                        <a
-                            className="conduct-link"
-                            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-                            target="_blank"
-                            rel="noreferrer">
-                            Code of Conduct
-                        </a>
-                    </div>
-                </div> */}
             </div>
         </div>
     );
