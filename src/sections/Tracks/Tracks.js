@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import "./Tracks.css";
 
 import scales from "../../assets/Tracks/Scales.svg";
@@ -13,19 +13,30 @@ import inequalityFlag from "../../assets/Tracks/inequality.svg";
 
 import river from "../../assets/Tracks/river.svg";
 
-function MainTracks(){
+function MainTracks(props){
+
   return (
-    <div class="track-river">
+    // two different river implementations, one for larger screens and one for mobile/tablet
+    <div class="track-river" style={props.display}>
       <img class="track-riverBackground is-hidden-touch" src={river} alt="river" />
-      <img class="track-inequalityFlag is-hidden-touch" src={inequalityFlag} alt="inequality flag and boat" />
-      <img class="track-healthFlag is-hidden-touch" src={healthFlag} alt="health flag and boat" />
-      <img class="track-envFlag is-hidden-touch" src={envFlag} alt="environment flag and boat" />
-      <img class="track-edFlag is-hidden-touch" src={edFlag} alt="education flag and boat" />
+      <img class="track-inequalityFlag is-hidden-touch" src={inequalityFlag} alt="inequality flag and boat" 
+        onClick={(e) => {props.handlePageIndex(0); props.handleRiverDisplay({visibility: 'hidden'}); }} />
+      <img class="track-healthFlag is-hidden-touch" src={healthFlag} alt="health flag and boat" 
+        onClick={(e) => {props.handlePageIndex(2); props.handleRiverDisplay({visibility: 'hidden'}); }} />
+      <img class="track-envFlag is-hidden-touch" src={envFlag} alt="environment flag and boat" 
+        onClick={(e) => {props.handlePageIndex(1); props.handleRiverDisplay({visibility: 'hidden'}); }} />
+      <img class="track-edFlag is-hidden-touch" src={edFlag} alt="education flag and boat" 
+        onClick={(e) => {props.handlePageIndex(3); props.handleRiverDisplay({visibility: 'hidden'}); }} />
+
       <div class="track-flagContainer is-hidden-desktop" style={{backgroundImage: `url(${river})`}}>
-        <img class="track-inequalityFlag" src={inequalityFlag} alt="inequality flag and boat" />
-        <img class="track-healthFlag" src={healthFlag} alt="health flag and boat" />
-        <img class="track-envFlag" src={envFlag} alt="environment flag and boat" />
-        <img class="track-edFlag" src={edFlag} alt="education flag and boat" />
+        <img class="track-inequalityFlag" src={inequalityFlag} alt="inequality flag and boat" 
+          onClick={(e) => {props.handlePageIndex(0); props.handleRiverDisplay({display: 'none'}); }} />
+        <img class="track-healthFlag" src={healthFlag} alt="health flag and boat" 
+          onClick={(e) => {props.handlePageIndex(2); props.handleRiverDisplay({display: 'none'}); }} />
+        <img class="track-envFlag" src={envFlag} alt="environment flag and boat" 
+          onClick={(e) => {props.handlePageIndex(1); props.handleRiverDisplay({display: 'none'}); }} />
+        <img class="track-edFlag" src={edFlag} alt="education flag and boat" 
+          onClick={(e) => {props.handlePageIndex(3); props.handleRiverDisplay({display: 'none'}); }} />
       </div>
     </div>
   )
@@ -33,8 +44,8 @@ function MainTracks(){
 
 function Page(props) {
   return (
-    <div class="track-container columns">
-      <div class="column is-4 is-hidden-mobile">
+    <div class="track-container columns" style={props.display}>
+      <div class="column is-6 is-hidden-mobile">
         <div class="track-mainImage">
           <img src={props.image} alt={props.header} />
         </div>
@@ -45,7 +56,7 @@ function Page(props) {
           <div class="track-rectangle" style={props.rectangleStyling}></div>
           <img class="track-mobileImage is-hidden-tablet" src={props.image} alt={props.header}  />
           <div class="track-textExplanation">{props.text}</div>
-          <div class="track-button" style={props.buttonStyling}>Back</div>
+          <div class="track-button" style={props.buttonStyling} onClick={(e) => {props.handlePageIndex(-1); props.handleRiverDisplay({visibility: 'visible'})}}>Back</div>
         </div>
       </div>
     </div>
@@ -81,14 +92,21 @@ const Tracks = () => {
     buttonStyling: {background: 'rgba(246, 228, 161, 0.8)'}
   },]
 
+  // riverDisplay is whether the river background should currently be visible or not
+  const [riverDisplay, setRiverDisplay] = useState({visibility: 'visible'});
+
+  // pageIndex corresponds to which tracks page in the "info" above should currently be displayed, -1 if none
+  const [pageIndex, setPageIndex] = useState(-1);
+
   return (
     <div class="track">
       <div class="track-title">Tracks</div>
-      <MainTracks />
-      {info.map((e) => {
+      <MainTracks display={riverDisplay} handleRiverDisplay = {setRiverDisplay} handlePageIndex = {setPageIndex}/>
+      {info.map((e, index) => {
+        const displayPage = pageIndex === index ? { display: 'flex' } : {display: 'none'};
         return (
           <div class="track-page">
-            <Page image={e.image} header={e.header} text={e.text} rectangleStyling={e.rectangleStyling} buttonStyling={e.buttonStyling} />
+            <Page key={e} image={e.image} header={e.header} text={e.text} rectangleStyling={e.rectangleStyling} buttonStyling={e.buttonStyling} display ={displayPage} handleRiverDisplay = {setRiverDisplay} handlePageIndex = {setPageIndex} />
           </div>
         )
       })}
