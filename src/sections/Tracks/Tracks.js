@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import "./Tracks.css";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import scales from "../../assets/Tracks/Scales.svg";
 import flowers from "../../assets/Tracks/Flowers.svg";
