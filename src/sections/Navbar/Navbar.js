@@ -3,13 +3,17 @@ import "./Navbar.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = ({ isVisible }) => {
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
   const checkboxChange = () => {
     if (window.innerWidth <= 1000) {
       const contright = document.querySelector("#content-right");
       if (contright.style.opacity === "1") {
         contright.style.opacity = "0";
         contright.style.width = "0%";
+        contright.style.left = "-1000px";
       } else {
+        contright.style.left = "0px";
         contright.style.opacity = "1";
         contright.style.width = "100%";
       }
