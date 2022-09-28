@@ -12,6 +12,12 @@
     padding: 75px 150px;
 }
 
+@media screen and (max-width: 1024px){
+    .FAQ {
+        padding: 30px 20px;
+    }
+  }
+
 .FAQ h2 {
     font-family: "Rany";
     font-style: normal;
