@@ -9,12 +9,12 @@ SwiperCore.use([A11y, Autoplay]);
 
 const speakers = [
   {
-    src: "temp.png",
+    src: "neetu.png",
     name: "Neetu Rajpal",
     title: "CTO @ Oscar Health"
   },
   {
-    src: "temp.png",
+    src: "andrew.png",
     name: "Andrew First",
     title: "Co-Founder/CTO @ Plannery"
   },
@@ -29,17 +29,17 @@ const speakers = [
     title: "Founding Engineer @ Maven"
   },
   {
-    src: "temp.png",
+    src: "jash.png",
     name: "Jash Vora",
     title: "Technical PM @ Lineage Logistics",
   },
   {
-    src: "temp.png",
+    src: "marcelino.png",
     name: "Marcelino Alvarez",
     title: "CEO @ Photon Marine",
   },
   {
-    src: "temp.png",
+    src: "saleem.png",
     name: "Saleem Hussain",
     title: "Director of Growth Investments @ IBM Worldwide Systems",
   },
