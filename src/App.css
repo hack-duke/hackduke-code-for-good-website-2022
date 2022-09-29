@@ -11,7 +11,7 @@ a {
 
 @font-face {
     font-family: "Rany", sans-serif;
-    src: local("Rany"), url(./fonts/Rany-400.woff) format("woff");
+    src: local("Rany"), url(../public/fonts/Rany-400.woff) format("woff");
     font-weight: normal;
     font-style: normal;
 }
