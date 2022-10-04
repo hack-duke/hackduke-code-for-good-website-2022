@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans&family=Montserrat&display=swap");
+@import url("http://fonts.cdnfonts.com/css/rany");
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +12,12 @@ a {
     color: inherit;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Rany", sans-serif;
     src: local("Rany"), url(../public/fonts/Rany-400.woff) format("woff");
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 html,
 body {

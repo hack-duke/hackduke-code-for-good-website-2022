@@ -1,19 +1,18 @@
-@import url('http://fonts.cdnfonts.com/css/rany');
+/* @import url('http://fonts.cdnfonts.com/css/rany'); */
 
-.about{
+.about {
     width: 100vw;
     height: 100%;
     min-height: 100vh;
-    max-width: 100%;  /* added */
+    max-width: 100%; /* added */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FBF9F7;
+    background: #fbf9f7;
     padding: 100px 0px;
-
 }
 
-.about-grid-container{
+.about-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -28,7 +27,7 @@
     }
 }
 
-.about-text{
+.about-text {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -38,24 +37,23 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1040px) {
-    .about-text{
+    .about-text {
         max-width: 337px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .about-text{
-        
+    .about-text {
     }
 }
 
 @media only screen and (max-width: 570px) {
-    .about-text h3{
+    .about-text h3 {
         max-width: 333px;
     }
 }
 
-.about-butterfly-right{
+.about-butterfly-right {
     width: 100%;
     height: 100%;
     min-height: 250px;
@@ -67,7 +65,7 @@
     justify-content: center;
 }
 
-.about-butterfly-left{
+.about-butterfly-left {
     width: 100%;
     height: 100%;
     display: flex;
@@ -76,59 +74,59 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .about-butterfly-left{
+    .about-butterfly-left {
         width: 0%;
         height: 0px;
     }
 }
 
-.about-text h3{
-    font-family: 'Rany';
+.about-text h3 {
+    font-family: "Rany";
     font-weight: 500;
     font-size: 30px;
     line-height: 45px;
-    color: #26467E;
+    color: #26467e;
     z-index: 1;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 @media only screen and (max-width: 390px) {
-    .about-text h3{
+    .about-text h3 {
         padding-left: 5px;
         padding-right: 5px;
     }
 }
 
-.about-text .red-stripe{
+.about-text .red-stripe {
     position: inherit;
     margin-top: -43px;
     height: 45px;
     width: 100%;
-    background: #FBE6DC;
+    background: #fbe6dc;
     overflow: hidden;
 }
 
-.about-text p{
-    font-family: 'Rany';
+.about-text p {
+    font-family: "Rany";
     font-style: normal;
     font-weight: 150;
     font-size: 20px;
     line-height: 30px;
-    color: #26467E;
+    color: #26467e;
     margin-top: 16px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.butterfly4{
+.butterfly4 {
     width: 120px;
     height: 120px;
     left: 833px;
     top: 1287px;
 }
 
-.butterfly5{
+.butterfly5 {
     transform: translateY(90px);
     width: 120px;
     height: 120px;
@@ -218,13 +216,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .butterfly4{
-        transform: translateY(-40px)translateX(30vw);
+    .butterfly4 {
+        transform: translateY(-40px) translateX(30vw);
         margin-top: auto;
         margin-bottom: auto;
     }
 
-    .butterfly5{
+    .butterfly5 {
         transform: translateY(40px) translateX(-30vw);
         margin-top: auto;
         margin-bottom: auto;
@@ -233,7 +231,7 @@
     }
 }
 
-.butterfly6{
+.butterfly6 {
     transform: translateY(20px);
     width: 120px;
     height: 120px;
