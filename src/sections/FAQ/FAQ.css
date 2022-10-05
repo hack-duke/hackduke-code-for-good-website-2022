@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/rany");
+/* @import url("http://fonts.cdnfonts.com/css/rany"); */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 .FAQ {
@@ -12,11 +12,11 @@
     padding: 75px 150px;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .FAQ {
         padding: 30px 20px;
     }
-  }
+}
 
 .FAQ h2 {
     font-family: "Rany";
