@@ -29,7 +29,7 @@ const cards = [
     {
         color: "blue",
         title: "When is the application deadline?",
-        text: "Applications will close on Sunday, September 30 at 11:59 PM EST, and all decisions will be released by Saturday, October 8. We hope to see you all there, so make sure to apply!",
+        text: "Applications will close on Thursday, October 20th at 11:59 PM EST, and all decisions will be released by Friday, October 21st. We hope to see you all there, so make sure to apply!",
     },
     {
         color: "yellow",
