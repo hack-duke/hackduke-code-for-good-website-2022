@@ -47,69 +47,60 @@
   transform: scaleX(1.5);
 }
 
-@media screen and (min-width: 1448px){
-  .track-inequalityFlag,
-  .track-healthFlag,
-  .track-envFlag,
-  .track-edFlag {
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 1448px){
-  .track-inequalityFlag,
-  .track-healthFlag,
-  .track-envFlag,
-  .track-edFlag {
-    width: 400px;
-  }
-}
-
 @media screen and (min-width: 1024px){
 
   .track-inequalityFlag{
-    transform: translateY(-130px);
-    left: 20%;
+    transform: scale(0.9) translateY(-110px);
+    left: 5%;
     top: 0;
     position: absolute;
   }
 
   .track-healthFlag{
-    right: 10%;
+    right: 15%;
     top: 0;
-    transform: translateY(-10px);
+    transform: scale(0.9) translateY(-150px);
     position: absolute;
   }  
   .track-envFlag{
-    bottom: 0;
-    left: 10%;
+    bottom: 5%;
+    left: 5%;
     position: absolute;
   }
 
   .track-edFlag{
-    right: 20%;
-    bottom: 10%;
+    right: 0%;
+    bottom: 15%;
     position: absolute;
   }
 }
 
+@media screen and (min-width: 1448px){
+  .track-edFlag{
+    bottom: 20%;
+    right: 10%;
+  }
+  .track-healthFlag{
+    right: 30%;
+  }
+}
 
 @media screen and (max-width: 1024px){
   .track-inequalityFlag{
-    width: 400px;
-    transform: translateY(-230px);
+    max-width: 400px;
+    transform: scale(0.9) translateY(-200px);
   }
   .track-healthFlag{
-    width: 400px;
-    transform: translateY(-300px);
+    max-width: 400px;
+    transform: scale(0.9) translateY(-350px);
   }  
   .track-envFlag{
-    width: 400px;
-    transform: translateY(-330px);;
+    max-width: 400px;
+    transform: scale(0.9) translateY(-300px);;
   }
   .track-edFlag{
-    width: 400px;
-    transform: translateY(-450px);
+    max-width: 400px;
+    transform: scale(0.9) translateY(-450px);
   }
 }
 
