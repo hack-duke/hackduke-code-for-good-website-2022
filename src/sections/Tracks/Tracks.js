@@ -129,34 +129,42 @@ function MainTracks(props) {
 
 function Page(props) {
   return (
-    <div class="track-container columns" style={props.display}>
-      <div class="column is-6 is-hidden-mobile">
-        <div class="track-mainImage">
-          <img src={props.image} alt={props.header} />
-        </div>
-      </div>
-      <div class="column is-6">
-        <div class="track-infoRows">
-          <div class="track-textHeader">{props.header}</div>
-          <div class="track-rectangle" style={props.rectangleStyling}></div>
-          <img
-            class="track-mobileImage is-hidden-tablet"
-            src={props.image}
-            alt={props.header}
-          />
-          <div class="track-textExplanation">{props.text}</div>
-          <div
-            class="track-button"
-            style={props.buttonStyling}
-            onClick={(e) => {
-              props.handlePageIndex(-1);
-              props.handleRiverDisplay({ visibility: "visible" });
-              scrollTop(true);
-            }}
-          >
-            Back
+    <div class="track-container" style={props.display}>
+      <div class="track-contentContainer columns">
+        <div class="column is-6 is-hidden-mobile">
+          <div class="track-mainImage">
+            <img src={props.image} alt={props.header} />
           </div>
         </div>
+        <div class="column is-6">
+          <div class="track-infoRows">
+            <div class="track-textHeader">{props.header}</div>
+            <div class="track-rectangle" style={props.rectangleStyling}></div>
+            <img
+              class="track-mobileImage is-hidden-tablet"
+              src={props.image}
+              alt={props.header}
+            />
+            <div class="track-textExplanation">{props.text}</div>
+            <div
+              class="track-button"
+              style={props.buttonStyling}
+              onClick={(e) => {
+                props.handlePageIndex(-1);
+                props.handleRiverDisplay({ visibility: "visible" });
+                scrollTop(true);
+              }}
+            >
+              Back
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="track-diamondContainer">
+        <span class="track-firstDiamond" style={props.diamondIndex ==0 ?  {background:"#A491DD"} : {background: 'white'}}></span>
+        <span class="track-secondDiamond" style={props.diamondIndex ==1 ?  {background:"#48A7A1"} : {background: 'white'}}></span>
+        <span class="track-thirdDiamond" style={props.diamondIndex ==2 ?  {background:"#EF798A"} : {background: 'white'}}></span>
+        <span class="track-fourthDiamond" style={props.diamondIndex ==3 ?  {background:"#EBC644"} : {background: 'white'}}></span>
       </div>
     </div>
   );
@@ -226,6 +234,7 @@ const Tracks = () => {
               display={displayPage}
               handleRiverDisplay={setRiverDisplay}
               handlePageIndex={setPageIndex}
+              diamondIndex={index}
             />
           </div>
         );
