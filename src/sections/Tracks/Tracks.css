@@ -1,10 +1,10 @@
-.track {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    padding: 100px 0;
-    position: relative;
+.track{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 100px 0;
+  position: relative;
 }
 
 .track-title{
@@ -15,20 +15,28 @@
   line-height: 45px;
   /* identical to box height */
 
-    letter-spacing: 0.05em;
-    text-transform: capitalize;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
 
-    color: #26467e;
+  color: #26467E;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .track-river {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: 180px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 180px;
+  width: 100%;
+
+}
+
+@media screen and (max-width: 1024px){
+  .track-river {
     width: 100%;
+    margin-top: 100px;
+  }
 }
 
 .track-riverBackground{
@@ -249,60 +257,20 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .track-inequalityFlag {
-        transform: translateY(-130px);
-        left: 20%;
-        top: 0;
-        position: absolute;
-    }
-
-    .track-healthFlag {
-        right: 10%;
-        top: 0;
-        transform: translateY(-10px);
-        position: absolute;
-    }
-    .track-envFlag {
-        bottom: 0;
-        left: 10%;
-        position: absolute;
-    }
-
-    .track-edFlag {
-        right: 20%;
-        bottom: 10%;
-        position: absolute;
-    }
+  .track-textExplanation {
+    margin: 40px 0 0 0;
+    font-size: 20px;
+    width: 511px;
+    height: 234px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
-    .track-inequalityFlag {
-        width: 400px;
-        transform: translateY(-230px);
-    }
-    .track-healthFlag {
-        width: 400px;
-        transform: translateY(-300px);
-    }
-    .track-envFlag {
-        width: 400px;
-        transform: translateY(-330px);
-    }
-    .track-edFlag {
-        width: 400px;
-        transform: translateY(-450px);
-    }
-}
-
-.track-flagContainer {
-    height: 876px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position-x: 10%;
+@media screen and (max-width: 768px) {
+  .track-infoRows{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
+  }
 }
 
 .track-textHeader {
@@ -313,47 +281,31 @@
 }
 
 @media screen and (max-width: 768px) {
-    .track-infoRows {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.track-textHeader {
-    line-height: 60px;
-    font-size: 40px;
-    font-family: "Rany";
+  .track-textHeader {
+    font-family: 'Rany';
     font-style: normal;
-    color: #26467e;
-}
-
-@media screen and (max-width: 768px) {
-    .track-textHeader {
-        font-family: "Rany";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 45px;
-        line-height: 60px;
-        color: #26467e;
-    }
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 60px;
+    color: #26467E;
+  }
 }
 
 .track-button {
-    width: 130px;
-    height: 42px;
-    font-family: "Rany";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 42px;
-    text-align: center;
-    color: #26467e;
-    border-radius: 30px;
+  width: 130px;
+  height: 42px;
+  font-family: 'Rany';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  color: #26467E;
+  border-radius: 30px;
 }
 
-@media screen and (max-width: 768px) {
-    .track-button {
-        margin: 20px;
-    }
+@media screen and (max-width: 768px){
+  .track-button {
+    margin: 20px;
+  }
 }
