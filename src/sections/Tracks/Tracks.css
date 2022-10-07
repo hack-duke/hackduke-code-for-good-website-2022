@@ -1,256 +1,311 @@
-.track {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    padding: 100px 0;
-    position: relative;
+.track{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 100px 0;
+  position: relative;
 }
 
-/* @media screen and (max-width: 1024px){
-  .track {
-    margin-bottom: 700px;
-  }
-} */
+.track-title{
+  font-family: 'Rany';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 45px;
+  /* identical to box height */
 
-.track-title {
-    font-family: "Rany";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 45px;
-    /* identical to box height */
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
 
-    letter-spacing: 0.05em;
-    text-transform: capitalize;
+  color: #26467E;
 
-    color: #26467e;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .track-river {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: 180px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 180px;
+  width: 100%;
+
+}
+
+@media screen and (max-width: 1024px){
+  .track-river {
     width: 100%;
+    margin-top: 100px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
-    .track-river {
-        width: 100%;
-    }
+.track-riverBackground{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 600px;
+  transform: scaleX(1.5);
 }
 
-.track-riverBackground {
-    position: relative;
+@media screen and (min-width: 1024px){
+
+  .track-inequalityFlag{
+    transform: scale(0.9) translateY(-110px);
+    left: 5%;
     top: 0;
-    left: 0;
-    width: 100%;
-    max-height: 600px;
+    position: absolute;
+  }
+
+  .track-healthFlag{
+    right: 15%;
+    top: 0;
+    transform: scale(0.9) translateY(-150px);
+    position: absolute;
+  }  
+  .track-envFlag{
+    bottom: 5%;
+    left: 5%;
+    position: absolute;
+  }
+
+  .track-edFlag{
+    right: 0%;
+    bottom: 15%;
+    position: absolute;
+  }
 }
 
-@media screen and (min-width: 1448px) {
-    .track-inequalityFlag,
-    .track-healthFlag,
-    .track-envFlag,
-    .track-edFlag {
-        width: auto;
-    }
+@media screen and (min-width: 1448px){
+  .track-edFlag{
+    bottom: 20%;
+    right: 10%;
+  }
+  .track-healthFlag{
+    right: 30%;
+  }
 }
 
-@media screen and (max-width: 1448px) {
-    .track-inequalityFlag,
-    .track-healthFlag,
-    .track-envFlag,
-    .track-edFlag {
-        width: 400px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .track-inequalityFlag {
-        transform: translateY(-130px);
-        left: 20%;
-        top: 0;
-        position: absolute;
-    }
-
-    .track-healthFlag {
-        right: 10%;
-        top: 0;
-        transform: translateY(-10px);
-        position: absolute;
-    }
-    .track-envFlag {
-        bottom: 0;
-        left: 10%;
-        position: absolute;
-    }
-
-    .track-edFlag {
-        right: 20%;
-        bottom: 10%;
-        position: absolute;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .track-inequalityFlag {
-        width: 400px;
-        transform: translateY(-230px);
-    }
-    .track-healthFlag {
-        width: 400px;
-        transform: translateY(-300px);
-    }
-    .track-envFlag {
-        width: 400px;
-        transform: translateY(-330px);
-    }
-    .track-edFlag {
-        width: 400px;
-        transform: translateY(-450px);
-    }
+@media screen and (max-width: 1024px){
+  .track-inequalityFlag{
+    max-width: 400px;
+    transform: scale(0.9) translateY(-200px);
+  }
+  .track-healthFlag{
+    max-width: 400px;
+    transform: scale(0.9) translateY(-350px);
+  }  
+  .track-envFlag{
+    max-width: 400px;
+    transform: scale(0.9) translateY(-300px);;
+  }
+  .track-edFlag{
+    max-width: 400px;
+    transform: scale(0.9) translateY(-450px);
+  }
 }
 
 .track-flagContainer {
-    height: 876px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position-x: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
+  height: 876px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
 }
 
 .track-page {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    position: absolute;
-    margin: 20px;
-    top: 30%;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  margin: 20px;
+  top: 30%;
+  width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-    .track-page {
-        margin: 100px;
-        top: 40%;
-    }
+@media screen and (min-width: 768px){
+  .track-page{
+    margin: 100px;
+    top: 40%;
+  }
 }
 
-@media screen and (min-width: 1024px) {
-    .track-page {
-        top: 20%;
-    }
+@media screen and (min-width: 1024px){
+  .track-page {
+    top: 20%;
+  }
 }
 
-.track-container {
-    width: 85%;
-    justify-content: space-around;
-    align-items: center;
+.track-container{
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.track-mainImage {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+.track-contentContainer{
+  width: 85%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.track-mobileImage {
-    margin-top: 22px;
-    max-height: 240px;
+.track-mainImage{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.track-mobileImage{
+  margin-top: 22px;
+  max-height: 240px;
 }
 
 .track-row {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .track-rectangle {
-    height: 6px;
-    width: 238px;
-    background: black;
-    margin-top: 4px;
+  height: 6px;
+  width: 238px;
+  background: black;
+  margin-top: 4px;
+
+}
+.track-diamondContainer{
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  margin-top: 100px;
 }
 
-.track-textExplanation {
-    margin-top: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    color: #26467e;
-    text-align: center;
-    font-size: 18px;
-    font-family: "Rany";
+@media screen and (max-width: 1024px){
+  .track-diamondContainer {
+     margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .track-diamondContainer {
+     width: 50%;
+     margin-top: 0px;
+  }
+}
+
+.track-firstDiamond{
+  box-sizing: border-box;
+  width: 27px;
+  height: 27px;
+  border: 3px solid #A491DD;
+  transform: rotate(-45deg);
+}
+
+.track-secondDiamond{
+  box-sizing: border-box;
+  width: 27px;
+  height: 27px;
+  border: 3px solid #48A7A1;;
+  transform: rotate(-45deg);
+}
+
+.track-thirdDiamond{
+  box-sizing: border-box;
+  width: 27px;
+  height: 27px;
+  border: 3px solid #EF798A;
+  transform: rotate(-45deg);
+}
+
+.track-fourthDiamond{
+  box-sizing: border-box;
+  width: 27px;
+  height: 27px;
+  border: 3px solid #EBC644;
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px){
+  .track-firstDiamond,
+  .track-secondDiamond,
+  .track-thirdDiamond,
+  .track-fourthDiamond {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.track-textExplanation{
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: #26467E;
+  text-align: center;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
-    .track-textExplanation {
-        margin: 40px 0;
-        font-size: 18px;
-        text-align: left;
-        font-family: "Rany";
-    }
+  .track-textExplanation {
+    margin: 40px 0;
+    font-size: 18px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .track-textExplanation {
-        margin: 40px 0 0 0;
-        font-size: 20px;
-        width: 511px;
-        height: 234px;
-        font-family: "Rany";
-    }
+  .track-textExplanation {
+    margin: 40px 0 0 0;
+    font-size: 20px;
+    width: 511px;
+    height: 234px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .track-infoRows {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .track-infoRows{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .track-textHeader {
-    line-height: 60px;
-    font-size: 40px;
-    font-family: "Rany";
-    font-style: normal;
-    color: #26467e;
+  line-height: 60px;
+  font-size: 40px;
+  color: #26467E;
+  font-style: normal;
 }
 
 @media screen and (max-width: 768px) {
-    .track-textHeader {
-        font-family: "Rany";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 45px;
-        line-height: 60px;
-        color: #26467e;
-    }
+  .track-textHeader {
+    font-family: 'Rany';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 60px;
+    color: #26467E;
+  }
 }
 
 .track-button {
-    width: 130px;
-    height: 42px;
-    font-family: "Rany";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 42px;
-    text-align: center;
-    color: #26467e;
-    border-radius: 30px;
+  width: 130px;
+  height: 42px;
+  font-family: 'Rany';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  color: #26467E;
+  border-radius: 30px;
 }
 
-@media screen and (max-width: 768px) {
-    .track-button {
-        margin: 20px;
-    }
+@media screen and (max-width: 768px){
+  .track-button {
+    margin: 20px;
+  }
 }
