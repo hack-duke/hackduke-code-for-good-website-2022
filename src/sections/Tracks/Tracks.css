@@ -55,6 +55,7 @@
     left: 5%;
     top: 0;
     position: absolute;
+    cursor: pointer;
   }
 
   .track-healthFlag{
@@ -62,17 +63,20 @@
     top: 0;
     transform: scale(0.9) translateY(-150px);
     position: absolute;
+    cursor: pointer;
   }  
   .track-envFlag{
     bottom: 5%;
     left: 5%;
     position: absolute;
+    cursor: pointer;
   }
 
   .track-edFlag{
     right: 0%;
     bottom: 15%;
     position: absolute;
+    cursor: pointer;
   }
 }
 
@@ -300,6 +304,7 @@
   font-size: 20px;
   line-height: 42px;
   text-align: center;
+  cursor: pointer;
   color: #26467E;
   border-radius: 30px;
 }

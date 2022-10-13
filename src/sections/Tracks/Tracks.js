@@ -161,10 +161,10 @@ function Page(props) {
         </div>
       </div>
       <div class="track-diamondContainer">
-        <span class="track-firstDiamond" style={props.diamondIndex ==0 ?  {background:"#A491DD"} : {background: 'white'}}></span>
-        <span class="track-secondDiamond" style={props.diamondIndex ==1 ?  {background:"#48A7A1"} : {background: 'white'}}></span>
-        <span class="track-thirdDiamond" style={props.diamondIndex ==2 ?  {background:"#EF798A"} : {background: 'white'}}></span>
-        <span class="track-fourthDiamond" style={props.diamondIndex ==3 ?  {background:"#EBC644"} : {background: 'white'}}></span>
+        <span class="track-firstDiamond" style={props.diamondIndex ===0 ?  {background:"#A491DD"} : {background: 'white'}}></span>
+        <span class="track-secondDiamond" style={props.diamondIndex ===1 ?  {background:"#48A7A1"} : {background: 'white'}}></span>
+        <span class="track-thirdDiamond" style={props.diamondIndex ===2 ?  {background:"#EF798A"} : {background: 'white'}}></span>
+        <span class="track-fourthDiamond" style={props.diamondIndex ===3 ?  {background:"#EBC644"} : {background: 'white'}}></span>
       </div>
     </div>
   );
