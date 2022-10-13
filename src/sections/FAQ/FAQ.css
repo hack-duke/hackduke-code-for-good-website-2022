@@ -49,7 +49,6 @@
 }
 
 .note-title {
-    transition: all 1s;
     padding: 1rem;
     text-align: center;
     font-size: 1.5rem;
@@ -60,7 +59,6 @@
 
 .note-text {
     padding: 1rem;
-    transition: all 1s;
     font-size: 1rem;
     font-family: "Rany";
     font-weight: 400;
