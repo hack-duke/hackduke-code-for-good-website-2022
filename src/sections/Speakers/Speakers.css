@@ -48,9 +48,9 @@
     gap: 15px;
 }
 
-@media screen and (max-width: 1664px) {
+@media screen and (max-width: 1864px) {
     .speaker-info {
-        flex: 1 0 26%;
+        flex: 1 0 19%;
     }
 }
 

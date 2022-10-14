@@ -7,6 +7,7 @@ import jash from "../../assets/Speakers/jash.png";
 import anni from "../../assets/Speakers/anni.png";
 import zhichao from "../../assets/Speakers/zhichao.png";
 import andrew from "../../assets/Speakers/andrew.png";
+import liz from "../../assets/Speakers/liz.png";
 
 // {
 //     src: neetu,
@@ -76,6 +77,14 @@ const Speakers = () => {
                     </div>
                     <h4>Andrew First</h4>
                     <p className="speaker-description">Co-founder @ Plannery</p>
+                </div>
+
+                <div className="speaker-info">
+                    <div className="speaker-name">
+                        <img src={liz} alt="liz-pic" className="" />    
+                    </div>
+                    <h4>Liz Klinger</h4>
+                    <p className="speaker-description">CEO & Co-founder @ Lioness</p>
                 </div>
             </div>
             {/* <SpeakerSlide /> */}
