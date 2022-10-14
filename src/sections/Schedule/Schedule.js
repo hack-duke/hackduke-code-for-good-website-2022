@@ -4,7 +4,7 @@ import "./Schedule.css";
 const Schedule = () => {
   return (
     <div id="schedule" className="schedule">
-      <h2>Schedule: To Be Decided</h2>
+      <h2>Schedule:</h2>
     </div>
   );
 };
