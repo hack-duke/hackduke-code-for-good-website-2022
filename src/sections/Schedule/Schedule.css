@@ -26,3 +26,34 @@
     color: #26467E;
 
 }
+.column {
+    float: left;
+    width: 40%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .date {
+    font-family: "Rany", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #26467e;
+    margin-top: 20px;
+}
+.time-place {
+    font-family: "Rany";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22.5px;
+    line-height: 30px;
+    color: #26467e;
+    padding-bottom: 20px;
+}
