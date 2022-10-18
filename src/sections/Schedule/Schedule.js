@@ -4,7 +4,7 @@ import "./Schedule.css";
 const Schedule = () => {
   const sat = [
     {
-      time: "9:00-10:30 am",
+      time: "9:30-10:30 am",
       event: "Student Check-in",
     },
     {
