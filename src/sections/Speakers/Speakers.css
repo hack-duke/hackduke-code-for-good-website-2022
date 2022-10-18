@@ -92,6 +92,10 @@
     padding-bottom: 100px;
 }
 
+.speaker-name-text {
+    text-align: center;
+}
+
 .speaker-description {
     max-width: 185px;
     text-align: center;
