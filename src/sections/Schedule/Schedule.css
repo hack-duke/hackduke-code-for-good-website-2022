@@ -32,7 +32,7 @@
   justify-items: center;
 }
 
-.column {
+.sched-column {
   float: left;
   width: 40%;
 }
@@ -52,22 +52,23 @@
   }
 
   .time-place {
-    width: 250px;
+    width: 180px;
+    font-size: 20.5px;
   }
 
-  .lilent {
-
+  .sched-time {
+    width: 120px;
   }
 }
   
   /* Clear floats after the columns */
-  .row:after {
+  .sched-row:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  .date {
+  .sched-date {
     font-family: "Rany", sans-serif;
     font-size: 30px;
     font-weight: 500;
@@ -76,6 +77,7 @@
     text-align: left;
     color: #26467e;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .time-place {
     font-family: "Rany";

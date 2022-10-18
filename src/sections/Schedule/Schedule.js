@@ -95,16 +95,16 @@ const Schedule = () => {
   return (
     <div id="schedule" className="schedule">
       <h2>Schedule</h2>
-      <div class="row sched">
-        <div class="column day">
-          <div class="date">Satuday, October 22</div>
+      <div class="sched-row sched">
+        <div class="sched-column day">
+          <div class="sched-date">Satuday, October 22</div>
           {sat.map((e) => {
             return (
-              <div className="row entry">
-                <div className="column lilent">
-                  <div class="time-place">{e.time}</div>
+              <div className="sched-row entry">
+                <div className="sched-column lilent">
+                  <div class="time-place sched-time">{e.time}</div>
                 </div>
-                <div className="column">
+                <div className="sched-column">
                   <div class="time-place">{e.event}</div>
                 </div>
               </div>
@@ -112,15 +112,15 @@ const Schedule = () => {
           })}
         </div>
 
-        <div class="column day">
-          <div class="date">Sunday, October 23</div>
+        <div class="sched-column day">
+          <div class="sched-date">Sunday, October 23</div>
           {sun.map((e) => {
             return (
-              <div className="row">
-                <div className="column">
-                  <div class="time-place">{e.time}</div>
+              <div className="sched-row">
+                <div className="sched-column">
+                  <div class="time-place sched-time">{e.time}</div>
                 </div>
-                <div className="column">
+                <div className="sched-column">
                   <div class="time-place">{e.event}</div>
                 </div>
               </div>
