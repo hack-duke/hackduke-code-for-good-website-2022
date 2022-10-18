@@ -9,6 +9,10 @@ import zhichao from "../../assets/Speakers/zhichao.png";
 import andrew from "../../assets/Speakers/andrew.png";
 import liz from "../../assets/Speakers/liz.png";
 import larae from "../../assets/Speakers/larae.png";
+import pete from "../../assets/Speakers/pete.png";
+import julie from "../../assets/Speakers/julie.png";
+import tobi from "../../assets/Speakers/tobi.png";
+import briana from "../../assets/Speakers/briana.png";
 
 // {
 //     src: neetu,
@@ -94,6 +98,38 @@ const Speakers = () => {
                     </div>
                     <h4>LaRae Snoddy</h4>
                     <p className="speaker-description">Director, Student Operations @ Paragon One</p>
+                </div>
+
+                <div className="speaker-info">
+                    <div className="speaker-name">
+                        <img src={pete} alt="pete-pic" className="" />    
+                    </div>
+                    <h4>Pete Andrews</h4>
+                    <p className="speaker-description">CEO @ Reconnect</p>
+                </div>
+
+                <div className="speaker-info">
+                    <div className="speaker-name">
+                        <img src={julie} alt="julie-pic" className="" />    
+                    </div>
+                    <h4>Julie Wright</h4>
+                    <p className="speaker-description">Research and Communications Manager @ Reconnect</p>
+                </div>
+
+                <div className="speaker-info">
+                    <div className="speaker-name">
+                        <img src={tobi} alt="tobi-pic" className="" />    
+                    </div>
+                    <h4>Tobi Walter</h4>
+                    <p className="speaker-description">Principal @ Cofounders Capital</p>
+                </div>
+
+                <div className="speaker-info">
+                    <div className="speaker-name">
+                        <img src={briana} alt="briana-pic" className="" />    
+                    </div>
+                    <h4>Briana Frank</h4>
+                    <p className="speaker-description">VP @ IBM Cloud</p>
                 </div>
             </div>
             {/* <SpeakerSlide /> */}
