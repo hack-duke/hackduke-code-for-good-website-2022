@@ -21,10 +21,6 @@ const Schedule = () => {
     },
     {
       time: "1:00-2:00 pm",
-      event: "Ideation Workshop and Sponsor Fair",
-    },
-    {
-      time: "1:00-2:00 pm",
       event: "Product Management Case Study Talk",
     },
     {
