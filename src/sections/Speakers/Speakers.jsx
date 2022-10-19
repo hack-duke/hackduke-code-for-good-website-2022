@@ -54,6 +54,14 @@ const Speakers = () => {
 
                 <div className="speaker-info">
                     <div className="speaker-name">
+                        <img src={briana} alt="briana-pic" className="" />    
+                    </div>
+                    <h4 className="speaker-name-text">Briana Frank</h4>
+                    <p className="speaker-description">VP @ IBM Cloud</p>
+                </div>
+
+                <div className="speaker-info">
+                    <div className="speaker-name">
                         <img src={jash} alt="jash-pic" className="" />    
                     </div>
                     <h4 className="speaker-name-text">Jash Vora</h4>
@@ -122,14 +130,6 @@ const Speakers = () => {
                     </div>
                     <h4 className="speaker-name-text">Tobi Walter</h4>
                     <p className="speaker-description">Principal @ Cofounders Capital</p>
-                </div>
-
-                <div className="speaker-info">
-                    <div className="speaker-name">
-                        <img src={briana} alt="briana-pic" className="" />    
-                    </div>
-                    <h4 className="speaker-name-text">Briana Frank</h4>
-                    <p className="speaker-description">VP @ IBM Cloud</p>
                 </div>
             </div>
             {/* <SpeakerSlide /> */}
