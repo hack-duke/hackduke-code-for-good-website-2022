@@ -17,15 +17,26 @@ const Landing = () => {
                     <div className="line"></div>
                     <div className="date">October 22-23, 2022</div>
                     <div className="button-conduct">
-                        <div
-                            onClick={() =>
-                                window.open(
-                                    "https://hackduke.typeform.com/to/XYySGCPT",
-                                    "_blank"
-                                )
-                            }
-                            className="join">
-                            Apply Now!
+                        <div className="buttonContainer">
+                            <div
+                                onClick={() =>
+                                    window.open(
+                                        "https://hackduke.typeform.com/to/XYySGCPT",
+                                        "_blank"
+                                    )
+                                }
+                                className="join">
+                                Apply Now!
+                            </div>
+                            <div
+                                onClick={() =>
+                                    window.open(
+                                        "https://hd-team.notion.site/HackDuke-2022-Hacker-Guide-0c031fd134794ca897b8ab5fb79c2eab"
+                                    )
+                                }
+                                className="join">
+                               HackDuke Guide 
+                            </div>
                         </div>
                         <div className="conduct">
                             © HackDuke 2022 —{" "}

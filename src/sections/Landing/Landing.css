@@ -9,8 +9,8 @@
 }
 
 .welcome {
-    width: 25rem;
-    margin-left: 18vw;
+    width: 30rem;
+    margin-left: 12vw;
     text-align: left;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .join {
-    width: 15rem;
+    width: 16rem;
     height: 4rem;
     text-align: center;
     padding-top: 1.25rem;
@@ -66,6 +66,12 @@
     background: #ebc644;
     transition: 0.4s background-color;
 }
+
+  .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
 @keyframes island_desktop {
     0% {
@@ -153,10 +159,11 @@
 @media screen and (max-width: 1024px) {
     .landing {
         padding-top: 5vh;
-        height: 130vh;
+        height: 145vh;
     }
 
     .welcome {
+        width: 25rem;
         margin: auto;
         margin-top: 20px;
         text-align: center;
@@ -175,7 +182,7 @@
     }
 
     .island {
-        margin-top: 10vh;
+        margin-top: 20vh;
     }
 
     .bg {
@@ -230,10 +237,14 @@
     }
 
     .join {
-        position: absolute;
-        width: 50vw;
-        left: 25vw;
+        width: 60vw;
         /* transform: translateY(1vw) translateX(1); */
+    }
+  
+    .buttonContainer {
+        position: absolute;
+        left: 20vw;
+        flex-direction: column;
     }
 
     .conduct {
@@ -241,7 +252,7 @@
         width: 80vw;
         text-align: center;
         left: 10vw;
-        transform: translateY(10vh);
+        transform: translateY(20vh);
         z-index: 10;
     }
 }
