@@ -9,7 +9,7 @@ const Schedule = () => {
     },
     {
       time: "11:00-11:15 am",
-      event: "Opening Ceramony",
+      event: "Opening Ceremony",
     },
     {
       time: "11:15 am -12:15 pm",
@@ -32,16 +32,16 @@ const Schedule = () => {
       event: "Health and Education Track Talks",
     },
     {
+      time: "4:00-5:00 pm",
+      event: "Mixer for Female-identifying and Non-binary Hackers",
+    },
+    {
       time: "5:00-6:00 pm",
       event: "UI/UX Design Workshop",
     },
     {
       time: "6:00-7:00 pm",
       event: "Dinner",
-    },
-    {
-      time: "7:00-8:00 pm",
-      event: "Mixer for Female-identifying and Non-binary Hackers",
     },
     {
       time: "8:30-11:00 pm",
