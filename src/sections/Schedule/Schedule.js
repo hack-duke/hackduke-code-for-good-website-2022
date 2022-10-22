@@ -20,6 +20,10 @@ const Schedule = () => {
       event: "Lunch",
     },
     {
+      time: "12:15-1:00 pm",
+      event: "Team Formation Mixer",
+    },
+    {
       time: "1:00-2:00 pm",
       event: "Product Management Case Study Talk",
     },
